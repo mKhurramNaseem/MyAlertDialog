@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/btn_doIt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_doIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_click"
+        app:layout_constraintBottom_toTopOf="@id/btn_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/time_view"
+        app:layout_constraintStart_toStartOf="@id/btn_doIt"
+        app:layout_constraintEnd_toEndOf="@id/btn_doIt"
+        app:layout_constraintTop_toBottomOf="@id/btn_doIt"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Date"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_doIt"
+        app:layout_constraintBottom_toTopOf="@id/btn_form"/>
+
+    <TextView
+        android:id="@+id/view_date"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_date"
+        app:layout_constraintEnd_toEndOf="@id/btn_date"
+        app:layout_constraintTop_toBottomOf="@id/btn_date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/second_activity"
+/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/second_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Activity"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btn_form"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_exit"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/second_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
