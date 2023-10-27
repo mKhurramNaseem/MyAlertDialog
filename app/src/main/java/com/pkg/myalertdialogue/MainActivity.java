@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
-                                Toast.makeText(MainActivity.this, "Application Ended", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "Application Ended on btn Click", Toast.LENGTH_SHORT).show();
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {
