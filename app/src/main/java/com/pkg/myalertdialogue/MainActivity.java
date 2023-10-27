@@ -17,13 +17,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.datepicker.MaterialDatePicker;
-import com.google.android.material.dialog.MaterialDialogs;
 import com.google.android.material.timepicker.MaterialTimePicker;
 import com.google.android.material.timepicker.TimeFormat;
 
 public class MainActivity extends AppCompatActivity {
-    AppCompatButton btn_click,btn_doIt,btn_custom,btn_date,btn_second_activity,btn_exit;
+    AppCompatButton btn_click_new,btn_doIt,btn_custom,btn_date,btn_second_activity,btn_exit;
     AppCompatButton btn_submit;
     EditText et_username,et_password;
     String username,password;
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_click = findViewById(R.id.btn_click);
+        btn_click_new = findViewById(R.id.btn_click);
         btn_doIt = findViewById(R.id.btn_doIt);
         btn_custom = findViewById(R.id.btn_form);
         btn_date = findViewById(R.id.btn_date);
@@ -43,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         view_date = findViewById(R.id.view_date);
         btn_second_activity = findViewById(R.id.second_activity);
         btn_exit = findViewById(R.id.btn_exit);
-        btn_click.setOnClickListener(new View.OnClickListener() {
+        btn_click_new.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog dialog = new AlertDialog.Builder(MainActivity.this)
